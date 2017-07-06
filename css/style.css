@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-size: small;
+}
+
+body {
+    background: #fff;
+    color: #222;
+}
+
+body, td, a, p, .h {
+    font-family: arial,sans-serif;
+}
+
+.left{
+    float: left
+}
+.right{
+    float: right
+}
+.clearfix{
+    display: table;
+    clear: both;
+}
+#content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#content-wrapper{
+    width: 600px;
+    margin: 200px auto 0;
+}
+img#logo{
+    display: block;
+    width: 272px;
+    margin: 0 auto 44px;
+}
+
+#search-bar{
+    height: 44px;
+    position: relative;
+    padding: 5px 0px 0 9px;
+    padding-left: 16px;
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+    outline: 0;
+}
+
+#search-bar:focus{
+    box-shadow: 0 0 6px rgba(0,0,0,.1);
+}
+
+#search-bar>input{
+    outline: none;
+    border: 0;
+    height: 100%;
+    width: calc(100% - 65px);
+}
+
+#right-btn{
+    width: 56px;
+    height: 44px;
+}
+#mic{
+    display: block;
+    height: 100%;
+    width: 44px;
+}
+.mic-icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 5px 22px;
+    background: url(../images/mic.png) no-repeat center;
+    background-size: 24px 24px;
+}
+
+#top-right-items {
+    position: relative;
+    z-index: 20;
+    padding: 10px 30px;
+}
+
+#top-right-items ul{
+    list-style: none;
+}
+#top-right-items ul> li{
+    float: left;
+    padding: 10px;
+    font-size: 1.01em;
+}
+
+#top-right-items ul:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#top-right-items ul> li > a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+}
+
+#top-right-items ul> li > a:hover{
+    text-decoration: underline;
+}
+
+#top-right-items ul> li > a.btn{
+    color: white;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    background: -moz-linear-gradient(top,#4387fd,#4683ea);
+    background: linear-gradient(top,#4387fd,#4683ea);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4387fd,endColorstr=#4683ea,GradientType=0);
+    width: 71px;
+    text-align: center;
+}
